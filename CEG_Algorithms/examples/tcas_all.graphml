@@ -1,0 +1,1560 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+http://graphml.graphdrawing.org/xmlns/1.1/graphml.xsd">
+<!--Content: List of graphs and data-->
+
+	<key id="grade" for="node" attr.name="grade" attr.type="int">
+	<default>null</default>	
+	</key>
+	
+	<key  id="label" for="node" attr.name="label" attr.type="string">
+	<default>null</default>	
+	</key>
+
+	<key id="neg" for="edge" attr.name="neg" attr.type="string">
+	<default>null</default>	
+	</key>
+	
+	<key id="relation" for="node" attr.name="relation" attr.type="string">
+	<default>null</default>	
+	</key>
+	
+	<key id="nodeType" for="node" attr.name="nodeType" attr.type="string">
+	<default>null</default>
+	</key>
+
+	<key id="consInt" for="node" attr.name="consInt" attr.type="string">
+	<default>null</default>
+	</key>	
+	
+	<graph edgedefault="undirected">
+		
+		<node id = "C1">
+		<data key="label">C1</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C2">
+		<data key="label">C2</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C3">
+		<data key="label">C3</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C4">
+		<data key="label">C4</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C5">
+		<data key="label">C5</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C6">
+		<data key="label">C6</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C7">
+		<data key="label">C7</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C8">
+		<data key="label">C8</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C9">
+		<data key="label">C9</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C10">
+		<data key="label">C10</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C11">
+		<data key="label">C11</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C12">
+		<data key="label">C12</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C13">
+		<data key="label">C13</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C14">
+		<data key="label">C14</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		
+		<node id = "CO1">
+		<data key="label">E</data>
+		<data key="grade">0</data>
+		<data key="nodeType">Constraint</data>
+		<data key="consInt">I2</data>
+		</node>
+
+		
+		<node id = "I1">
+		<data key="label">I1</data>
+		<data key="grade">2</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C1+~C2 - OR</data>
+		</node>
+		
+		<node id = "I2">
+		<data key="label">I2</data>
+		<data key="grade">2</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C4+C5 - OR</data>
+		</node>
+		
+		<node id = "I3">
+		<data key="label">I3</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C6+I2 - AND</data>
+		</node>
+		
+		<node id = "I4">
+		<data key="label">I4</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C4+C5 - OR</data>
+		</node>
+		
+		<node id = "I5">
+		<data key="label">I5</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C3+C8 - AND</data>
+		</node>
+		
+		<node id = "I6">
+		<data key="label">I6</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+~C8 - AND</data>
+		</node>
+		
+		<node id = "I7">
+		<data key="label">I7</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I5+I6 - OR</data>
+		</node>
+		
+		<node id = "I8">
+		<data key="label">I8</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I4+I7 - AND</data>
+		</node>
+		
+		
+		<node id = "I9">
+		<data key="label">I9</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C5+C6 - OR</data>
+		</node>
+		
+		<node id = "I10">
+		<data key="label">I10</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C2+I9 - AND</data>
+		</node>
+		
+		<node id = "I11">
+		<data key="label">I11</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I8+I10 - OR</data>
+		</node>
+		
+		<node id = "E1">
+			<data key="label">E1</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I1+I3+I11 - AND</data>
+		</node>
+		
+		<node id = "I12">
+		<data key="label">I12</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C7+C9 - OR</data>
+		</node>
+		
+		<node id = "I13">
+		<data key="label">I13</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C2+C9 - AND</data>
+		</node>
+		
+		<node id = "I14">
+		<data key="label">I14</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+I12 - AND</data>
+		</node>
+		
+		<node id = "I15">
+		<data key="label">I15</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I13+I14 - OR</data>
+		</node>
+		
+		<node id = "I16">
+		<data key="label">I16</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C3+C4+C5 - OR</data>
+		</node>
+		
+		<node id = "I17">
+		<data key="label">I17</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I15+I16 - AND</data>
+		</node>
+		
+		<node id = "I18">
+		<data key="label">I18</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C6 - AND</data>
+		</node>
+		
+		<node id = "I19">
+		<data key="label">I19</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C3 - AND</data>
+		</node>
+		
+		<node id = "I20">
+		<data key="label">I20</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C6+C7+C8+C9 - OR</data>
+		</node>
+		
+		<node id = "I21">
+		<data key="label">I21</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I19+I20 - AND</data>
+		</node>
+		
+		<node id = "I22">
+		<data key="label">I22</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I17+I18+I21 - OR</data>
+		</node>
+		
+		<node id = "I23">
+		<data key="label">I23</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C3+~C4 - OR</data>
+		</node>
+
+		<node id = "I24">
+		<data key="label">I24</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C3+~C5 - OR</data>
+		</node>
+		
+		<node id = "I25">
+		<data key="label">I25</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C4+~C5 - OR</data>
+		</node>
+		
+		<node id = "I26">
+		<data key="label">I26</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C6+~C8 - OR</data>
+		</node>
+		
+		<node id = "I27">
+		<data key="label">I27</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C6+~C7 - OR</data>
+		</node>
+		
+		<node id = "I89">
+		<data key="label">I89</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C6+~C9 - OR</data>
+		</node>
+		
+		<node id = "I90">
+		<data key="label">I90</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C7+~C8 - OR</data>
+		</node>
+		
+		<node id = "I91">
+		<data key="label">I91</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C8+~C9 - OR</data>
+		</node>
+		
+		<node id = "E2">
+			<data key="label">E2</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I22+I1+I23+I24+I25+I26+I27+I89+I90+I91 - AND</data>
+		</node>
+		
+		
+		<node id = "I28">
+		<data key="label">I28</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+I25 - AND</data>
+		</node>
+		
+		<node id = "I29">
+		<data key="label">I29</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C6+~C7+~C8+C9 - OR</data>
+		</node>
+		
+		<node id = "I30">
+		<data key="label">I30</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C7+~C8+~C9 - OR</data>
+		</node>
+		
+		<node id = "I31">
+		<data key="label">I31</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C6+~C7+~C11+~C12 - OR</data>
+		</node>
+		
+		<node id = "I32">
+		<data key="label">I32</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C7+C9+~C11 - OR</data>
+		</node>
+		
+		<node id = "I33">
+		<data key="label">I33</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I29+I30+I31+I32 - AND</data>
+		</node>
+		
+		<node id = "I34">
+		<data key="label">I34</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C4+C5 - AND</data>
+		</node>
+		
+		<node id = "I35">
+		<data key="label">I35</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C3+~C13 - AND</data>
+		</node>
+		
+		<node id = "I36">
+		<data key="label">I36</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C2+I35+C6 - OR</data>
+		</node>
+		
+		<node id = "I37">
+		<data key="label">I37</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I34+I36 - OR</data>
+		</node>
+		
+		<node id = "I38">
+		<data key="label">I38</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I33+I37 - AND</data>
+		</node>
+		
+		<node id = "I39">
+		<data key="label">I39</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I28+I38 - OR</data>
+		</node>
+		
+		<node id = "I40">
+		<data key="label">I40</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C2+C3 - OR</data>
+		</node>
+		
+		<node id = "CO2">
+		<data key="label">O</data>
+		<data key="grade">0</data>
+		<data key="nodeType">Constraint</data>
+		<data key="consInt">I40</data>
+		</node>
+		
+		<node id = "E3">
+			<data key="label">E3</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I39+I40 - AND</data>
+		</node>
+		
+		
+		
+		<node id = "I41">
+		<data key="label">I41</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C2+~C3 - OR</data>
+		</node>
+		
+		<node id = "I42">
+		<data key="label">I42</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+I41+C4 - AND</data>
+		</node>
+		
+
+		<node id = "E4">
+			<data key="label">E4</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I42+C5 - OR</data>
+		</node>
+		
+		
+		
+		<node id = "I43">
+		<data key="label">I43</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~I41+I33 - AND</data>
+		</node>
+		
+		<node id = "I44">
+		<data key="label">I44</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I41+I43 - OR</data>
+		</node>
+		
+		<node id = "I45">
+		<data key="label">I45</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+I44 - AND</data>
+		</node>
+		
+		<node id = "E5">
+			<data key="label">E5</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I45+C6 - OR</data>
+		</node>
+		
+		
+		<node id = "I46">
+		<data key="label">I46</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C2 - OR</data>
+		</node>
+		
+		<node id = "CO3">
+		<data key="label">O</data>
+		<data key="grade">0</data>
+		<data key="nodeType">Constraint</data>
+		<data key="consInt">I46</data>
+		</node>
+		
+		<node id = "I47">
+		<data key="label">I47</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C6+C7 - OR</data>
+		</node>
+		
+		<node id = "CO4">
+		<data key="label">E</data>
+		<data key="grade">0</data>
+		<data key="nodeType">Constraint</data>
+		<data key="consInt">I47</data>
+		</node>
+		
+		<node id = "I48">
+		<data key="label">I48</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I47+~C8 - AND</data>
+		</node>
+		
+		<node id = "I49">
+		<data key="label">I49</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C10+~C11 - OR</data>
+		</node>
+		
+		<node id = "I50">
+		<data key="label">I50</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C2+C4 - AND</data>
+		</node>
+		
+		<node id = "I51">
+		<data key="label">I51</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I19+I50 - OR</data>
+		</node>
+		
+		<node id = "I52">
+		<data key="label">I52</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I51+C5 - AND</data>
+		</node>
+		
+		<node id = "I53">
+		<data key="label">I53</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C7+C9+C10 - AND</data>
+		</node>
+		
+		<node id = "I54">
+		<data key="label">I54</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C8+C9+C11 - AND</data>
+		</node>
+		
+		<node id = "I55">
+		<data key="label">I55</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C6+I53+I54 - OR</data>
+		</node>
+		
+		<node id = "E6">
+			<data key="label">E6</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I46+I23+I48+I49+I52+I55 - OR</data>
+		</node>
+		
+		
+		
+		
+		<node id = "I56">
+		<data key="label">I56</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C7+~C8 - OR</data>
+		</node>
+		
+		<node id = "I57">
+		<data key="label">I57</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C7+~C11 - AND</data>
+		</node>
+		
+		<node id = "I58">
+		<data key="label">I58</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C8+~C10 - AND</data>
+		</node>
+		
+		<node id = "I59">
+		<data key="label">I59</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C10+~C11 - AND</data>
+		</node>
+		
+		<node id = "I60">
+		<data key="label">I60</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">~C9+I57+I58+I59 - OR</data>
+		</node>
+		
+		<node id = "E7">
+			<data key="label">E7</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I46+I23+I56+I49+I52+I60 - AND</data>
+		</node>
+		
+		
+		
+		
+		<node id = "I61">
+			<data key="label">I61</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C6+C7 - AND</data>
+		</node>
+		
+		<node id = "I62">
+			<data key="label">I62</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C6+C8 - AND</data>
+		</node>
+		
+		<node id = "I63">
+			<data key="label">I63</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I61+I62 - OR</data>
+		</node>
+		
+		<node id = "I92">
+			<data key="label">I92</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I52+I63 - AND</data>
+		</node>
+		
+		<node id = "E8">
+			<data key="label">E8</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I46+I23+I56+I92 - AND</data>
+		</node>
+		
+		
+		
+		
+		
+		
+		<node id = "I64">
+			<data key="label">I64</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C2+C4 - AND</data>
+		</node>
+		
+		<node id = "I65">
+			<data key="label">I65</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~I41+I64 - OR</data>
+		</node>
+		
+		<node id = "I93">
+			<data key="label">I93</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C1+~C5+C6+~C7+I65 - AND</data>
+		</node>
+		
+		<node id = "E9">
+			<data key="label">E9</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I23+I93 - AND</data>
+		</node>
+		
+		
+		
+		
+		
+		<node id = "I66">
+			<data key="label">I66</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C1+~C2+~C3 - AND</data>
+		</node>
+		
+		<node id = "I67">
+			<data key="label">I67</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C8+C9 - OR</data>
+		</node>
+		
+		<node id = "I68">
+			<data key="label">I68</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C7+I67 - AND</data>
+		</node>
+		
+		<node id = "I69">
+			<data key="label">I69</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C7+I68 - OR</data>
+		</node>
+		
+		<node id = "I70">
+			<data key="label">I70</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C6+I69 - AND</data>
+		</node>
+		
+		<node id = "I71">
+			<data key="label">I71</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C10+~C12 - OR</data>
+		</node>
+		
+		<node id = "E10">
+			<data key="label">E10</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I66+C4+~C5+I70+I49+I71+~C13 - AND</data>
+		</node>
+		
+		
+		
+		
+		<node id = "I72">
+			<data key="label">I72</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I70+~I4 - AND</data>
+		</node>
+		
+		<node id = "I73">
+			<data key="label">I73</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~I70+I72 - OR</data>
+		</node>
+		
+		<node id = "E11">
+			<data key="label">E11</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I66+I73+I49+C10+~C12+C13 - AND</data>
+		</node>
+		
+		
+		
+		
+		
+		<node id = "I74">
+			<data key="label">I74</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C5+~C14 - AND</data>
+		</node>
+		
+		<node id = "I75">
+			<data key="label">I75</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I74+C4 - OR</data>
+		</node>
+		
+		<node id = "I76">
+			<data key="label">I76</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C10+C12+~C13 - AND</data>
+		</node>
+		
+		<node id = "I77">
+			<data key="label">I77</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~I49+I76 - OR</data>
+		</node>
+		
+		<node id = "I78">
+			<data key="label">I78</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I66+I70+I75 - AND</data>
+		</node>
+		
+		<node id = "I79">
+			<data key="label">I79</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C14+I77 - AND</data>
+		</node>
+		
+		
+		<node id = "E12">
+			<data key="label">E12</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I78+I79 - OR</data>
+		</node>
+		
+		
+		
+		
+		
+		<node id = "I80">
+			<data key="label">I80</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">~C3+~C4+C5+C6+~C7+~C8 - AND</data>
+		</node>
+		
+		<node id = "I81">
+			<data key="label">I81</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C9+~I59+~C12 - AND</data>
+		</node>
+		
+		
+		<node id = "E13">
+			<data key="label">E13</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">C1+C2+C3+I80+I81 - OR</data>
+		</node>
+		
+		
+		
+		
+		
+		<node id = "I82">
+			<data key="label">I82</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I4+I5 - AND</data>
+		</node>
+		
+		<node id = "I83">
+			<data key="label">I83</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I4+I6 - AND</data>
+		</node>
+		
+		<node id = "E14">
+			<data key="label">E14</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I82+I83+I10 - OR</data>
+		</node>
+		
+		
+		
+		
+		
+		<node id = "I84">
+			<data key="label">I84</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C1+I16+C7 - AND</data>
+		</node>
+		
+		<node id = "I85">
+			<data key="label">I85</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C1+C2 - OR</data>
+		</node>
+		
+		<node id = "I86">
+			<data key="label">I86</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I85+I16+C9 - AND</data>
+		</node>
+		
+		<node id = "E15">
+			<data key="label">E15</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I84+I18+I21+I86 - OR</data>
+		</node>
+		
+		
+		
+		
+		<node id = "E16">
+			<data key="label">E16</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I39</data>
+		</node>
+		
+		
+		
+		<node id = "E17">
+			<data key="label">E17</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I52+I55 - AND</data>
+		</node>
+		
+		
+		<node id = "E18">
+			<data key="label">E18</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I52+I60 - AND</data>
+		</node>
+		
+		
+		
+		<node id = "E19">
+			<data key="label">E19</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I52+I63 - AND</data>
+		</node>
+		
+		
+		
+		
+		
+		<node id = "I87">
+			<data key="label">I87</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">C2+C3 - AND</data>
+		</node>
+		
+		<node id = "I88">
+			<data key="label">I88</data>
+			<data key="grade">3</data>
+			<data key="nodeType">Intermediate</data>
+			<data key="relation">I87+I64 - OR</data>
+		</node>
+		
+		<node id = "E20">
+			<data key="label">E20</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">~C5+C6+~C7+C1+I88 - AND</data>
+		</node>
+		
+		
+		
+		
+		
+		<edge source = "CO1" target = "C4" />
+		<edge source = "CO1" target = "C5" />
+
+		<edge source = "CO2" target = "C1" />
+		<edge source = "CO2" target = "C2" />
+		<edge source = "CO2" target = "C3" />
+		
+		<edge source = "CO3" target = "C1" />
+		<edge source = "CO3" target = "C2" />
+		
+		<edge source = "CO4" target = "C6" />
+		<edge source = "CO4" target = "C7" />
+		
+		
+		
+		<edge source = "C1" target = "I1" >
+			<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C2" target = "I1" >
+			<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C4" target = "I2" />
+		<edge source = "C5" target = "I2" />
+
+		<edge source = "C6" target = "I3" >
+			<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I2" target = "I3" />
+		
+		<edge source = "C4" target = "I4" />
+		<edge source = "C5" target = "I4" />
+		
+		<edge source = "C1" target = "I5" />
+		<edge source = "C3" target = "I5" />
+		<edge source = "C8" target = "I5" />
+
+		<edge source = "C1" target = "I6" />
+		<edge source = "C8" target = "I6" >
+			<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I5" target = "I7" />
+		<edge source = "I6" target = "I7" />
+		
+		<edge source = "I4" target = "I8" />
+		<edge source = "I7" target = "I8" />
+		
+		<edge source = "C5" target = "I9" />
+		<edge source = "C6" target = "I9" />
+		
+		<edge source = "C2" target = "I10" />
+		<edge source = "I9" target = "I10" />
+		
+		<edge source = "I8" target = "I11" />
+		<edge source = "I10" target = "I11" />
+		
+		<edge source = "I1" target = "E1" />
+		<edge source = "I3" target = "E1" />
+		<edge source = "I11" target = "E1" />
+		
+		
+		<edge source = "C7" target = "I12" />
+		<edge source = "C9" target = "I12" />
+		
+		<edge source = "C2" target = "I13" />
+		<edge source = "C9" target = "I13" />
+		
+		<edge source = "C1" target = "I14" />
+		<edge source = "I12" target = "I14" />
+		
+		<edge source = "I13" target = "I15" />
+		<edge source = "I14" target = "I15" />
+		
+		<edge source = "C3" target = "I16" />
+		<edge source = "C4" target = "I16" />
+		<edge source = "C5" target = "I16" />
+		
+		<edge source = "I15" target = "I17" />
+		<edge source = "I16" target = "I17" />
+		
+		<edge source = "C1" target = "I18" />
+		<edge source = "C6" target = "I18" />
+		
+		<edge source = "C1" target = "I19" />
+		<edge source = "C3" target = "I19" />
+		
+		<edge source = "C6" target = "I20" />
+		<edge source = "C7" target = "I20" />
+		<edge source = "C8" target = "I20" />
+		<edge source = "C9" target = "I20" />
+		
+		<edge source = "I19" target = "I21" />
+		<edge source = "I20" target = "I21" />
+		
+		<edge source = "I17" target = "I22" />
+		<edge source = "I18" target = "I22" />
+		<edge source = "I21" target = "I22" />
+	
+		<edge source = "C3" target = "I23">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C4" target = "I23">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C3" target = "I24">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C5" target = "I24">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C4" target = "I25">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C5" target = "I25">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C6" target = "I26">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C8" target = "I26">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C6" target = "I27">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C7" target = "I27">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C6" target = "I89">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C9" target = "I89">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C7" target = "I90">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C8" target = "I90">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C8" target = "I91">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C9" target = "I91">
+		<data key = "neg">NOT</data>
+		</edge>
+
+		<edge source = "I22" target = "E2" />
+		<edge source = "I1" target = "E2" />
+		<edge source = "I23" target = "E2" />
+		<edge source = "I24" target = "E2" />
+		<edge source = "I25" target = "E2" />
+		<edge source = "I26" target = "E2" />
+		<edge source = "I27" target = "E2" />
+		<edge source = "I89" target = "E2" />
+		<edge source = "I90" target = "E2" />
+		<edge source = "I91" target = "E2" />
+	
+		<edge source = "C1" target = "I28" />
+		<edge source = "I25" target = "I28" />
+
+		<edge source = "C6" target = "I29" />
+		<edge source = "C7" target = "I29">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C8" target = "I29">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C9" target = "I29" />
+		
+		<edge source = "C7" target = "I30"/>
+		<edge source = "C8" target = "I30">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C9" target = "I30">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C6" target = "I31"/>
+		<edge source = "C7" target = "I31">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C11" target = "I31">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C12" target = "I31">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C7" target = "I32"/>
+		<edge source = "C9" target = "I32"/>
+		<edge source = "C11" target = "I32">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I29" target = "I33"/>
+		<edge source = "I30" target = "I33"/>
+		<edge source = "I31" target = "I33"/>
+		<edge source = "I32" target = "I33"/>
+		
+		<edge source = "C1" target = "I34"/>
+		<edge source = "C4" target = "I34"/>
+		<edge source = "C5" target = "I34"/>
+		
+		<edge source = "C3" target = "I35"/>
+		<edge source = "C13" target = "I35">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C2" target = "I36"/>
+		<edge source = "I35" target = "I36"/>
+		<edge source = "C6" target = "I36"/>
+		
+		<edge source = "I34" target = "I37"/>
+		<edge source = "I36" target = "I37"/>
+		
+		<edge source = "I33" target = "I38"/>
+		<edge source = "I37" target = "I38"/>
+		
+		<edge source = "I28" target = "I39"/>
+		<edge source = "I38" target = "I39"/>
+		
+		<edge source = "C1" target = "I40"/>
+		<edge source = "C2" target = "I40"/>
+		<edge source = "C3" target = "I40"/>
+		
+		<edge source = "I39" target = "E3"/>
+		<edge source = "I40" target = "E3"/>
+		
+		<edge source = "C2" target = "I41">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C3" target = "I41">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C1" target = "I42"/>
+		<edge source = "I41" target = "I42"/>
+		<edge source = "C4" target = "I42"/>
+		
+		<edge source = "I42" target = "E4"/>
+		<edge source = "C5" target = "E4"/>
+		
+		<edge source = "I40" target = "I43">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I33" target = "I43"/>
+		
+		<edge source = "I40" target = "I44"/>
+		<edge source = "I43" target = "I44"/>
+		
+		<edge source = "C1" target = "I45"/>
+		<edge source = "I44" target = "I45"/>
+		
+		<edge source = "I45" target = "E5"/>
+		<edge source = "C6" target = "E5"/>
+		
+		<edge source = "C1" target = "I46"/>
+		<edge source = "C2" target = "I46"/>
+		
+		<edge source = "C6" target = "I47"/>
+		<edge source = "C7" target = "I47"/>
+		
+		<edge source = "I47" target = "I48"/>
+		<edge source = "C8" target = "I48">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C10" target = "I49">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C11" target = "I49">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C2" target = "I50"/>
+		<edge source = "C4" target = "I50"/>
+		
+		<edge source = "I19" target = "I51"/>
+		<edge source = "I50" target = "I51"/>
+		
+		<edge source = "I51" target = "I52"/>
+		<edge source = "C5" target = "I52"/>
+		
+		<edge source = "C7" target = "I53"/>
+		<edge source = "C9" target = "I53"/>
+		<edge source = "C10" target = "I53"/>
+		
+		<edge source = "C8" target = "I54"/>
+		<edge source = "C9" target = "I54"/>
+		<edge source = "C11" target = "I54"/>
+		
+		<edge source = "C6" target = "I55"/>
+		<edge source = "I53" target = "I55"/>
+		<edge source = "I54" target = "I55"/>
+		
+		<edge source = "I46" target = "E6"/>
+		<edge source = "I23" target = "E6"/>
+		<edge source = "I48" target = "E6"/>
+		<edge source = "I49" target = "E6"/>
+		<edge source = "I52" target = "E6"/>
+		<edge source = "I55" target = "E6"/>
+		
+		<edge source = "C7" target = "I56">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C8" target = "I56">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C7" target = "I57">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C11" target = "I57">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C8" target = "I58">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C10" target = "I58">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C10" target = "I59">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C11" target = "I59">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C9" target = "I60">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I57" target = "I60"/>
+		<edge source = "I58" target = "I60"/>
+		<edge source = "I59" target = "I60"/>
+		
+		<edge source = "I46" target = "E7"/>
+		<edge source = "I23" target = "E7"/>
+		<edge source = "I56" target = "E7"/>
+		<edge source = "I49" target = "E7"/>
+		<edge source = "I52" target = "E7"/>
+		<edge source = "I60" target = "E7"/>
+		
+		<edge source = "C6" target = "I61"/>
+		<edge source = "C7" target = "I61"/>
+		
+		<edge source = "C6" target = "I62">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C8" target = "I62"/>
+		
+		<edge source = "I61" target = "I63"/>
+		<edge source = "I62" target = "I63"/>
+		
+		<edge source = "I52" target = "I92"/>
+		<edge source = "I63" target = "I92"/>
+		
+		<edge source = "I46" target = "E8"/>
+		<edge source = "I23" target = "E8"/>
+		<edge source = "I56" target = "E8"/>
+		<edge source = "I92" target = "E8"/>
+		
+		<edge source = "C2" target = "I64">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C4" target = "I64"/>
+		
+		<edge source = "I41" target = "I65">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I64" target = "I65"/>
+		
+		<edge source = "C1" target = "I93">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C5" target = "I93">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C7" target = "I93">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C6" target = "I93"/>
+		
+		<edge source = "I23" target = "E9"/>		
+		<edge source = "I93" target = "E9"/>
+		
+		<edge source = "C1" target = "I66"/>
+		<edge source = "C2" target = "I66">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C3" target = "I66">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C8" target = "I67"/>
+		<edge source = "C9" target = "I67"/>
+		
+		<edge source = "C7" target = "I68">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I67" target = "I68"/>
+		
+		<edge source = "C7" target = "I69"/>
+		<edge source = "I68" target = "I69"/>
+		
+		<edge source = "C6" target = "I70"/>
+		<edge source = "I69" target = "I70"/>
+		
+		<edge source = "C10" target = "I71"/>
+		<edge source = "C12" target = "I71">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I66" target = "E10"/>
+		<edge source = "C4" target = "E10"/>
+		<edge source = "C5" target = "E10">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I70" target = "E10"/>
+		<edge source = "I49" target = "E10"/>
+		<edge source = "I71" target = "E10"/>
+		<edge source = "C13" target = "E10">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I70" target = "I72"/>
+		<edge source = "I4" target = "I72">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I70" target = "I73">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I72" target = "I73"/>
+		
+		<edge source = "I66" target = "E11"/>
+		<edge source = "I73" target = "E11"/>
+		<edge source = "I49" target = "E11"/>
+		<edge source = "C10" target = "E11"/>
+		<edge source = "C12" target = "E11">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C13" target = "E11"/>
+		
+		<edge source = "C5" target = "I74">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C14" target = "I74">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I74" target = "I75"/>
+		<edge source = "C4" target = "I75"/>
+		
+		<edge source = "C10" target = "I76">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C12" target = "I76"/>
+		<edge source = "C13" target = "I76">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "I49" target = "I77">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I76" target = "I77"/>
+		
+		<edge source = "I66" target = "I78"/>
+		<edge source = "I70" target = "I78"/>
+		<edge source = "I75" target = "I78"/>
+		
+		<edge source = "C14" target = "I79">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I77" target = "I79"/>
+		
+		<edge source = "I78" target = "E12"/>
+		<edge source = "I79" target = "E12"/>
+		
+		<edge source = "C3" target = "I80">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C4" target = "I80">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C5" target = "I80"/>
+		<edge source = "C6" target = "I80"/>
+		<edge source = "C7" target = "I80">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C8" target = "I80">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C9" target = "I81"/>
+		<edge source = "I59" target = "I81">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C12" target = "I81">
+		<data key = "neg">NOT</data>
+		</edge>
+		
+		<edge source = "C1" target = "E13"/>
+		<edge source = "C2" target = "E13"/>
+		<edge source = "C3" target = "E13"/>
+		<edge source = "I80" target = "E13"/>
+		<edge source = "I81" target = "E13"/>
+		
+		<edge source = "I4" target = "I82"/>
+		<edge source = "I5" target = "I82"/>
+		
+		<edge source = "I4" target = "I83"/>
+		<edge source = "I6" target = "I83"/>
+		
+		<edge source = "I82" target = "E14"/>
+		<edge source = "I83" target = "E14"/>
+		<edge source = "I10" target = "E14"/>
+		
+		<edge source = "C1" target = "I84"/>
+		<edge source = "I16" target = "I84"/>
+		<edge source = "C7" target = "I84"/>
+		
+		<edge source = "C1" target = "I85"/>
+		<edge source = "C2" target = "I85"/>
+		
+		<edge source = "I85" target = "I86"/>
+		<edge source = "I16" target = "I86"/>
+		<edge source = "C9" target = "I86"/>
+		
+		<edge source = "I84" target = "E15"/>
+		<edge source = "I18" target = "E15"/>
+		<edge source = "I21" target = "E15"/>
+		<edge source = "I86" target = "E15"/>
+		
+		<edge source = "I39" target = "E16"/>
+		
+		<edge source = "I52" target = "E17"/>
+		<edge source = "I55" target = "E17"/>
+		
+		<edge source = "I52" target = "E18"/>
+		<edge source = "I60" target = "E18"/>
+		
+		<edge source = "I52" target = "E19"/>
+		<edge source = "I63" target = "E19"/>
+		
+		<edge source = "C2" target = "I87"/>
+		<edge source = "C3" target = "I87"/>
+		
+		<edge source = "I87" target = "I88"/>
+		<edge source = "I64" target = "I88"/>
+		
+		<edge source = "C5" target = "E20">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C6" target = "E20"/>
+		<edge source = "C7" target = "E20">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "C1" target = "E20">
+		<data key = "neg">NOT</data>
+		</edge>
+		<edge source = "I88" target = "E20"/>
+
+	</graph>
+</graphml>

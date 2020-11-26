@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+http://graphml.graphdrawing.org/xmlns/1.1/graphml.xsd">
+<!--Content: List of graphs and data-->
+
+	<key id="grade" for="node" attr.name="grade" attr.type="int">
+	<default>null</default>	
+	</key>
+	
+	<key  id="label" for="node" attr.name="label" attr.type="string">
+	<default>null</default>	
+	</key>
+
+	<key id="neg" for="edge" attr.name="neg" attr.type="string">
+	<default>null</default>	
+	</key>
+	
+	<key id="relation" for="node" attr.name="relation" attr.type="string">
+	<default>null</default>	
+	</key>
+	
+	<key id="nodeType" for="node" attr.name="nodeType" attr.type="string">
+	<default>null</default>
+	</key>
+
+	<key id="consInt" for="node" attr.name="consInt" attr.type="string">
+	<default>null</default>
+	</key>	
+
+
+	<graph edgedefault="undirected">
+		<node id = "C1">
+		<data key="label">C1</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C2">
+		<data key="label">C2</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C3">
+		<data key="label">C3</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C4">
+		<data key="label">C4</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C5">
+		<data key="label">C5</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C6">
+		<data key="label">C6</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C7">
+		<data key="label">C7</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C8">
+		<data key="label">C8</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C9">
+		<data key="label">C9</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+		<node id = "C10">
+		<data key="label">C10</data>
+		<data key="grade">1</data>
+		<data key="nodeType">Cause</data>
+		</node>
+					
+		
+		<node id = "I1">
+		<data key="label">I1</data>
+		<data key="grade">2</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C1+C2 - AND</data>
+		</node>
+				
+		<node id = "I2">
+		<data key="label">I2</data>
+		<data key="grade">2</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C3+C4+C5+I1 - OR</data>
+		</node>
+		
+		<node id = "I3">
+		<data key="label">I3</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C4+C5+C6+C7+C8 - OR</data>
+		</node>
+
+		<node id = "I4">
+		<data key="label">I4</data>
+		<data key="grade">2</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I2+I3 - AND</data>
+		</node>
+
+		<node id = "I5">
+		<data key="label">I5</data>
+		<data key="grade">2</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">I3+I4 - OR</data>
+		</node>
+
+		<node id = "I6">
+		<data key="label">I6</data>
+		<data key="grade">3</data>
+		<data key="nodeType">Intermediate</data>
+		<data key="relation">C9+C10 - OR</data>
+		</node>
+
+		<node id = "E1">
+			<data key="label">E1</data>
+			<data key="grade">4</data>
+			<data key="nodeType">Effect</data>
+			<data key="relation">I5+I6 - OR</data>
+		</node>		
+		
+
+		<edge source = "C1" target = "I1" />
+		<edge source = "C2" target = "I1" />
+
+        <edge source = "C3" target = "I2" />
+        <edge source = "C4" target = "I2" />
+		<edge source = "C5" target = "I2" />
+        <edge source = "I1" target = "I2" />
+
+		<edge source = "C4" target = "I3" />
+		<edge source = "C5" target = "I3" />
+		<edge source = "C6" target = "I3" />
+		<edge source = "C7" target = "I3" />
+		<edge source = "C8" target = "I3" />	
+
+		<edge source = "I2" target = "I4" />
+		<edge source = "I3" target = "I4" />
+		
+		<edge source = "I3" target = "I5" />
+		<edge source = "I4" target = "I5" />	
+
+		<edge source = "C9" target = "I6" />	
+		<edge source = "C10" target = "I6" />	
+
+		<edge source = "I5" target = "E1" />	
+		<edge source = "I6" target = "E1" />	
+		
+	</graph>
+</graphml>
