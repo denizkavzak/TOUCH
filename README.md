@@ -34,4 +34,15 @@ Implementation of other methods like CEG_BOR and BOR_MI are started but not comp
 
 ## References
 
-[1] Kavzak Ufuktepe, Deniz. Test case generation from cause effect graphs. MS thesis. Izmir Institute of Technology, 2016.
+Please cite the journal paper:
+
+@article{kavzak2021test,
+  title={Test input generation from cause--effect graphs},
+  author={Kavzak Ufuktepe, Deniz and Ayav, Tolga and Belli, Fevzi},
+  journal={Software Quality Journal},
+  volume={29},
+  number={4},
+  pages={733--782},
+  year={2021},
+  publisher={Springer}
+}
