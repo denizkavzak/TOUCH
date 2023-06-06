@@ -32,17 +32,18 @@ The architectural design of TOUCH software implements best practices for possibl
 
 Implementation of other methods like CEG_BOR and BOR_MI are started but not completed.
 
-## References
+## Citing
 
-Please cite the journal paper:
-
-@article{kavzak2021test,
-  title={Test input generation from cause--effect graphs},
-  author={Kavzak Ufuktepe, Deniz and Ayav, Tolga and Belli, Fevzi},
-  journal={Software Quality Journal},
-  volume={29},
-  number={4},
-  pages={733--782},
-  year={2021},
-  publisher={Springer}
-}
+If you have used our work please cite us
+```tex
+@article{kavzak2021test, 
+  title={Test input generation from cause--effect graphs}, 
+  author={Kavzak Ufuktepe, Deniz and Ayav, Tolga and Belli, Fevzi}, 
+  journal={Software Quality Journal}, 
+  volume={29}, 
+  number={4}, 
+  pages={733--782}, 
+  year={2021}, 
+  publisher={Springer} 
+} 
+```
